@@ -97,28 +97,32 @@ if (closeLightbox && lightbox) {
     });
 }
 
-/* FILTROS DE GALLERY */
+/* FILTROS DE GALLERY - DATA CATEGORY */
 
-const filterButtons = document.querySelectorAll(".filter-btn");
-const galleryFigures = document.querySelectorAll(".gallery-grid figure");
+const botonesFiltro = document.querySelectorAll(".filter-btn");
+const obrasGaleria = document.querySelectorAll(".gallery-grid figure");
 
-filterButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-        const filter = button.getAttribute("data-filter");
+botonesFiltro.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+        const filtro = boton.getAttribute("data-filter");
 
-        filterButtons.forEach(function (btn) {
+        console.log("Filtro seleccionado:", filtro);
+
+        botonesFiltro.forEach(function (btn) {
             btn.classList.remove("active-filter");
         });
 
-        button.classList.add("active-filter");
+        boton.classList.add("active-filter");
 
-        galleryFigures.forEach(function (figure) {
-            const category = figure.getAttribute("data-category");
+        obrasGaleria.forEach(function (obra) {
+            const categoria = obra.getAttribute("data-category");
 
-            if (filter === "all" || category === filter) {
-                figure.style.display = "block";
+            console.log("Categoría de obra:", categoria);
+
+            if (filtro === "all" || categoria === filtro) {
+                obra.classList.remove("ocultar");
             } else {
-                figure.style.display = "none";
+                obra.classList.add("ocultar");
             }
         });
     });

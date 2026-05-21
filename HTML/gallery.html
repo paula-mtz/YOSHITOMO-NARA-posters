@@ -4,7 +4,7 @@
     <title>Gallery — Yoshitomo Nara: Posters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="Recurso 4.svg" rel="icon" type="image/icon">
+    <link rel="icon" type="image/svg+xml" href="img/Recurso 4.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.gooagleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -39,6 +39,10 @@
             <p>BUY YOUR TICKETS ONLINE!</p>
             <p>BUY YOUR TICKETS ONLINE!</p>
             <p>BUY YOUR TICKETS ONLINE!</p>
+            <p>BUY YOUR TICKETS ONLINE!</p>
+            <p>BUY YOUR TICKETS ONLINE!</p>
+            <p>BUY YOUR TICKETS ONLINE!</p>
+            <p>BUY YOUR TICKETS ONLINE!</p>
         </div>
     </div>
 </header>
@@ -52,19 +56,19 @@
             </p>
         </section>
 
-        <section class="filters">
-            <button>ALL</button>
-            <button>POSTERS</button>
-            <button>PRINTS</button>
-            <button>EXHIBITION GRAPHICS</button>
-        </section>
+     <section class="filters">
+     <button class="filter-btn active-filter" data-filter="all">ALL</button>
+     <button class="filter-btn" data-filter="poster">POSTERS</button>
+     <button class="filter-btn" data-filter="print">PRINTS</button>
+     <button class="filter-btn" data-filter="exhibition">EXHIBITION GRAPHICS</button>
+     </section>
 
         <section class="gallery-grid">
             <figure data-category="print">
                 <img src="img/PRINT1.jpg.webp" alt="Green Eyes 2002">
                 <figcaption>
                     <span>PRINT 1</span>
-                    “Green Eyes (2002)”<br>
+                 <span class="obra-titulo">“Green Eyes (2002)”</span>
                     This print features a reproduction of Yoshitomo Nara’s Green Eyes (2002), an artwork in MoMA's collection. This reproduction is printed using state-of-the-art printing technology and materials. The high-density pigments provide rich and long-lasting colors and tonalities.
                 </figcaption>
             </figure>
@@ -73,7 +77,7 @@
                 <img src="img/PRINT2.jpg.webp" alt="OH MY GOD I MISS YOU 2001">
                 <figcaption>
                     <span>PRINT 2</span>
-                    “OH! MY GOD! I MISS YOU! (2001)”<br>
+                    <span class="obra-titulo">“OH! MY GOD! I MISS YOU! (2001)”</span>
                     This print features a reproduction of Yoshitomo Nara’s OH! MY GOD! I MISS YOU! (2001), an artwork in MoMA's collection. This reproduction is printed using state-of-the-art printing technology and materials.
                 </figcaption>
             </figure>
@@ -82,7 +86,7 @@
                 <img src="img/PRINT3.jpg.webp" alt="Untitled Eye Patch 2001">
                 <figcaption>
                     <span>PRINT 3</span>
-                    “Untitled (Eye Patch) (2001)”<br>
+                    <span class="obra-titulo">“Untitled (Eye Patch) (2001)”</span>
                     This print features a reproduction of Yoshitomo Nara’s Untitled (Eye Patch) (2001), an artwork in MoMA's collection. This reproduction is printed using state-of-the-art printing technology and materials.
                 </figcaption>
             </figure>
@@ -91,7 +95,7 @@
                 <img src="img/PRINT4.jpg.webp" alt="Yoshitomo Nara Postcard Folio">
                 <figcaption>
                     <span>PRINT 4</span>
-                    “Yoshitomo Nara Postcard Folio”<br>
+                   <span class="obra-titulo">“Yoshitomo Nara Postcard Folio”</span>
                     Twenty postcards are featured in the Yoshitomo Nara folio, published on the occasion of the exhibition Yoshitomo Nara at LACMA.
                 </figcaption>
             </figure>
@@ -100,7 +104,7 @@
                 <img src="img/POSTER1.jpeg" alt="YOSHITOMO NARA + GRAF EXHIBITION POSTER">
                 <figcaption>
                     <span>POSTER 1</span>
-                    “YOSHITOMO NARA + GRAF EXHIBITION POSTER”<br>
+                    <span class="obra-titulo">“YOSHITOMO NARA + GRAF EXHIBITION POSTER”</span>
                     YOSHITOMO NARA b. 1959. Inkjet and offset print. Executed in 2007-8
                 </figcaption>
             </figure>
@@ -109,7 +113,7 @@
                 <img src="img/POSTER2.jpg" alt="Yoshitomo Nara The Beginning Place Poster">
                 <figcaption>
                     <span>POSTER 2</span>
-                    “Yoshitomo Nara: The Beginning Place / Poster”<br>
+                  <span class="obra-titulo"> “Yoshitomo Nara: The Beginning Place / Poster”</span>
                     Poster. Year: 2023. Category: Exhibitions Type: Poster.
                 </figcaption>
             </figure>
@@ -118,7 +122,7 @@
                 <img src="img/POSTER3.jpg" alt="Midnight Tears Poster 2023">
                 <figcaption>
                     <span>POSTER 3</span>
-                    “MIDNIGHT TEARS POSTER, 2023”<br>
+                 <span class="obra-titulo">“MIDNIGHT TEARS POSTER, 2023”</span>
                     Poster featuring a reproduction of the painting by Yoshitomo Nara, Midnight Tears, 2023.
                 </figcaption>
             </figure>
@@ -127,7 +131,7 @@
                 <img src="img/POSTER4.jpg.avif" alt="Albertina Modern exhibition poster">
                 <figcaption>
                     <span>POSTER 4</span>
-                    “ALBERTINA MODERN, exhibition poster 2023”<br>
+                 <span class="obra-titulo">“ALBERTINA MODERN, exhibition poster 2023”</span>
                     Yoshitomo Nara original exhibition poster. First edition poster printed on 150 gsm paper.
                 </figcaption>
             </figure>
@@ -136,7 +140,7 @@
                 <img src="img/POSTER5.png.webp" alt="Harmless Kitty exhibition poster">
                 <figcaption>
                     <span>POSTER 5</span>
-                    “Harmless Kitty - Yoshitomo Nara Exhibition Poster”<br>
+                 <span class="obra-titulo">“Harmless Kitty - Yoshitomo Nara Exhibition Poster”</span>
                     Exhibition poster featuring Yoshitomo Nara's work Harmless Kitty, 1994.
                 </figcaption>
             </figure>
@@ -145,7 +149,7 @@
                 <img src="img/POSTER6.jpg.webp" alt="No War Love and Peace poster">
                 <figcaption>
                     <span>POSTER 6</span>
-                    “Yoshitomo Nara Poster Print No War Love & Peace”<br>
+                 <span class="obra-titulo">“Yoshitomo Nara Poster Print No War Love & Peace”</span>
                     From a series of six poster print exclusive to the AGWA Exhibition. Printed on high quality 170 GSM silk matt.
                 </figcaption>
             </figure>
@@ -154,7 +158,7 @@
                 <img src="img/POSTER7.jpg.webp" alt="Regent Dog poster">
                 <figcaption>
                     <span>POSTER 7</span>
-                    “Yoshitomo Nara Poster Print Regent Dog”<br>
+                <span class="obra-titulo">“Yoshitomo Nara Poster Print Regent Dog”</span>
                     Choose from a series of six poster print exclusive to the AGWA Exhibition. Printed on high quality 170 GSM silk matt.
                 </figcaption>
             </figure>
@@ -163,7 +167,7 @@
                 <img src="img/POSTER8.jpg" alt="Under The Hazy Sky 2012">
                 <figcaption>
                     <span>POSTER 8</span>
-                    “Under The Hazy Sky, 2012”<br>
+                <span class="obra-titulo">“Under The Hazy Sky, 2012”</span>
                     Released at Yoshitomo Nara's critically acclaimed exhibition “A bit like you and me...” at the Yokohama Museum of Art 2012.
                 </figcaption>
             </figure>
@@ -172,7 +176,7 @@
                 <img src="img/POSTER9.jpeg" alt="FireAid poster 2025">
                 <figcaption>
                     <span>POSTER 9</span>
-                    “Yoshitomo Nara Joins FireAid Concert Effort with Exclusive Merchandise for Wildfire Relief”<br>
+                <span class="obra-titulo">“Yoshitomo Nara Joins FireAid Concert Effort with Exclusive Merchandise for Wildfire Relief”</span>
                     The collection includes posters, T-shirts, hoodies, caps, and tote bags.
                 </figcaption>
             </figure>

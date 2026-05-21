@@ -292,6 +292,7 @@ figcaption span {
     transform: translateY(-5px);
 }
 
+
 .lightbox {
     display: none;
     position: fixed;
@@ -770,6 +771,44 @@ nav a:hover {
         max-width: 95%;
         max-height: 60vh;
     }
+}
+
+.filters .active-filter {
+    background-color: #c45187;
+    border-color: #c45187;
+    color: #fbfbfb;
+}
+
+.gallery-grid figcaption {
+    color: #666565;
+}
+
+.gallery-grid figcaption span {
+    color: #c45187;
+    font-weight: 700;
+}
+
+
+.gallery-grid figcaption {
+    line-height: 1.35;
+}
+
+.gallery-grid figcaption .obra-titulo {
+    display: block;
+    color: #a1be56;
+    font-weight: 400;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.gallery-grid figcaption p,
+.gallery-grid figcaption .obra-descripcion {
+    margin: 0;
+    padding: 0;
+}
+
+.ocultar {
+    display: none !important;
 }
 
 .filters .active-filter {
