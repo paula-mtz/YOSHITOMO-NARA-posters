@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOSHITOMO NARA:Posters</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="Recurso 4.svg" rel="icon" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a class="logo" href="index.html">
+                <img src="img/Recurso 4.svg" alt="Yoshitomo Nara Posters logo">
+            </a>
+
+            <div class="site-title">
+                YOSHITOMO NARA : Posters
+            </div>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">exhibition</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="tickets.html">tickets</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="marquesina">
+            <div>
+                <p>Yoshitomo Nara: Posters</p>
+                <p>Yoshitomo Nara: Posters</p>
+                <p>Yoshitomo Nara: Posters</p>
+                <p>Yoshitomo Nara: Posters</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <p class="date">Tickets & Visit</p>
+            <h1>Tickets & Visit</h1>
+        </section>
+
+        <section class="tickets-layout">
+            <form onsubmit="return comprar()">
+                <h2>Tickets & Visit</h2>
+
+                <label for="nombre">Name</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Email</label>
+                <input type="email" id="correo" required>
+
+                <label for="ticket">Ticket type</label>
+                <select id="ticket" onchange="costeTotal()">
+                    <option value="general">General admission - $100 mxn</option>
+                    <option value="student">Student ticket - $70 mxn</option>
+                    <option value="opening">Opening night - $150 mxn</option>
+                </select>
+
+                <label for="numero">Quantity</label>
+                <input type="number" id="numero" value="1" min="1" onchange="costeTotal()" onkeyup="costeTotal()">
+
+                <div class="total">
+                    <p>Total</p>
+                    <strong id="coste">$100 mxn</strong>
+                </div>
+
+                <button type="submit">Book tickets</button>
+            </form>
+
+            <section class="visit-info">
+                <h2>Visit information</h2>
+
+                <div>
+                    <h3>Espacio Unión</h3>
+                    <p>Mexico City</p>
+                </div>
+
+                <div>
+                    <h3>Opening hours</h3>
+                    <p>Tuesday — Sunday</p>
+                    <p>12:00 — 19:00</p>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+                    <p>hello@naraposters.mx</p>
+                    <p>Instagram: @naraposters</p>
+                </div>
+
+                <div>
+                    <h3>How to get there</h3>
+                    <p>
+                        The venue can be reached by metro, bike or walking from nearby neighbourhoods such as Condesa and Roma.
+                    </p>
+                </div>
+
+                <div class="map">
+                    <a href="https://www.google.com/maps" target="_blank">MAP: Link a Google Maps</a>
+                </div>
+            </section>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button onclick="cerrarVentana()">close</button>
+
+                <h2>Booking summary</h2>
+
+                <p><strong>Name:</strong> <span id="nom"></span></p>
+                <p><strong>Email:</strong> <span id="corr"></span></p>
+                <p><strong>Ticket:</strong> <span id="tipo"></span></p>
+                <p><strong>Quantity:</strong> <span id="num"></span></p>
+                <p><strong>Total:</strong> <span id="ct"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Yoshitomo Nara: Posters</h4>
+            <p>Contact: hello@naraposters.mx</p>
+            <p>Social: Instagram: @naraposters</p>
+        </div>
+
+        <div>
+            <h4>Venue</h4>
+            <p>Espacio Unión</p>
+            <p>Mexico City</p>
+        </div>
+
+        <div>
+            <h4>Useful links</h4>
+            <p><a href="tickets.html">Tickets</a></p>
+            <p><a href="gallery.html">Gallery</a></p>
+            <p><a href="tickets.html">Visit information</a></p>
+        </div>
+
+        <div>
+            <h4>Credits</h4>
+            <p>Paula Camacho & Ana Paula Martinez</p>
+            <p>Images used for educational purposes only.</p>
+        </div>
+    </footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
